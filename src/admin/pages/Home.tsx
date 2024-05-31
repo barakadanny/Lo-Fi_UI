@@ -1,14 +1,7 @@
-import React from "react";
 import RentalTools from "../components/RentalTools";
 import MissingItems from "../components/MissingItems";
 import RestockItems from "../components/RestockItems";
-
-interface Task {
-  tooRef: number;
-  name: string;
-  status: "completed" | "in progress" | "not started";
-  duration: string;
-}
+import WorkOrderStatus from "../components/WorkOrderStatus";
 
 export default function Home() {
   return (
@@ -16,6 +9,7 @@ export default function Home() {
       <RentalTools />
       <MissingItems />
       <RestockItems />
+      <WorkOrderStatus />
     </div>
   );
 }

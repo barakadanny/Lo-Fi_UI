@@ -22,7 +22,7 @@ export const CommonTable: React.FC<RentalToolsProps> = ({ headers, data }) => {
           >
             Details
           </Button>
-        ), // Button column for each row
+        ),
       }))}
     />
   );

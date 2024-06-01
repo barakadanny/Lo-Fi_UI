@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import settings from "./../../../assets/icons/settings.gif";
 
 const NavLinks: React.FC = () => {
   return (

@@ -13,7 +13,6 @@ const GridLayout: React.FC<GridLayoutProps> = ({
   children,
   cols,
   gap,
-  // rowGap = gap,
   className,
 }) => {
   return (

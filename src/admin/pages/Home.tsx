@@ -1,5 +1,4 @@
 import Container from "../../shared/components/UIElements/Container";
-// import GridLayout from "../../shared/components/UIElements/GridLayout";
 
 import RentalTools from "../components/RentalTools";
 import MissingItems from "../components/MissingItems";

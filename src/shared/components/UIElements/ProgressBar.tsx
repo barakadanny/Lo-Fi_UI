@@ -25,7 +25,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ score }) => {
         textColor: "#393939",
         textSize: "16px",
       })}
-      strokeWidth={10}
+      strokeWidth={7}
     />
   );
 };

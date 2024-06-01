@@ -7,7 +7,7 @@ interface ChartComponentProps {
     datasets: {
       label: string;
       data: number[];
-      backgroundColor: string[];
+      backgroundColor: any;
       borderColor: string[];
       borderWidth: number;
     }[];
@@ -20,7 +20,7 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
   centerText,
 }) => {
   const chartRef = useRef<HTMLCanvasElement>(null);
-  const chartInstance = useRef<Chart | null>(null);
+  const chartInstance = useRef<any>(null);
 
   useEffect(() => {
     if (chartInstance.current) {
@@ -40,11 +40,11 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
         ctx.textBaseline = "middle";
 
         const textX = Math.round(
-          (width - ctx.measureText(centerText).width) / 5.5
+          (width - ctx.measureText(centerText).width) / 2
         );
         const textY = height / 2;
 
-        ctx.fillStyle = "#4B5563"; // Tailwind's gray-700 color
+        ctx.fillStyle = "#4B5563";
         ctx.fillText(centerText, textX, textY);
         ctx.save();
       },
@@ -60,6 +60,7 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
           legend: {
             position: "right",
             labels: {
+              usePointStyle: true,
               generateLabels(chart) {
                 const data = chart.data;
                 if (data.labels && data.datasets.length) {
@@ -72,6 +73,7 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
                       hidden: !chart.getDataVisibility(index),
                       index,
                       pointStyle: "circle",
+                      strokeStyle: "transparent", // Make the border of the circles transparent
                     };
                   });
                 }

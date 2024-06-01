@@ -1,35 +1,46 @@
 import React from "react";
+import Profile from "./../UIElements/Profile";
 
-interface TableRow {
-  [key: string]: string | number | JSX.Element; // Update TableRow interface to allow JSX.Element for images
+interface RentalToolData {
+  Tool: number;
+  Name: string;
+  Status: string;
+  Duration: string;
+  ProfileImage: string;
+  [key: string]: any; // Update TableRow interface to allow JSX.Element for images
 }
 
 interface TableProps {
   headers: string[];
-  data: TableRow[];
+  data: RentalToolData[];
 }
 
 const Table: React.FC<TableProps> = ({ headers, data }) => (
-  <table>
-    <thead>
+  <table className="w-full text-sm text-left ">
+    <thead className="text-base text-gray-700 border-b">
       <tr>
         {headers.map((header) => (
-          <th key={header}>{header}</th>
+          <th className="px-1 py-3 text-gray-500 font-normal" key={header}>
+            {header}
+          </th>
         ))}
       </tr>
     </thead>
     <tbody>
-      {data.map((row, rowIndex) => (
-        <tr key={rowIndex}>
-          {headers.map((header, index) => (
-            <td key={index}>
+      {data.map((row: RentalToolData, rowIndex: number) => (
+        <tr className="border-b" key={rowIndex}>
+          {headers.map((header: string, index: number) => (
+            <td
+              className="px-1 py-2 font-medium text-gray-500 whitespace-nowrap"
+              key={index}
+            >
               {header === "Name" ? (
                 <div style={{ display: "flex", alignItems: "center" }}>
                   {row["ProfileImage"] && (
-                    <img
-                      src={row["ProfileImage"]}
+                    <Profile
+                      imageUrl={row["ProfileImage"]}
                       alt="Profile"
-                      style={{ width: "50px", height: "50px" }}
+                      size="30px"
                     />
                   )}
                   <span

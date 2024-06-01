@@ -35,6 +35,12 @@ export interface ReceptionSummaryData {
   count: number;
 }
 
+export interface MissingItemsData {
+  Tool: number;
+  Name: string;
+  ProfileImage: string;
+}
+
 export const receptionSummaryHeaders: string[] = ["Icon", "Name", "Count"];
 
 export const missingItemsHeaders: string[] = ["Tool", "Name", "Action"];

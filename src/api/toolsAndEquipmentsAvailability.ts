@@ -3,12 +3,12 @@ import { ToolData } from "../types/types";
 const toolsData: ToolData[] = [
   {
     icon: "🛠️",
-    name: "Hammer",
+    name: "Rental Items",
     score: 50,
   },
   {
     icon: "🔧",
-    name: "Wrench",
+    name: "Spare Parts",
     score: 75,
   },
 ];

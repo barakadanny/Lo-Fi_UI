@@ -10,6 +10,11 @@ Lo-Fi is a simple, minimalist dashboard interface built using React.js, TypeScri
 - **Customizable:** Built with React.js and TypeScript, making it easy to customize and extend according to your project requirements.
 - **Fast Development:** Developed using Vite, a fast build tool that significantly speeds up the development process.
 
+## Future Features
+
+- `Testing`: Implement comprehensive unit and integration tests to ensure the reliability and stability of the dashboard.
+- `Dark Mode`: Introduce a dark mode option for better accessibility and user preference.
+
 - ## Installation
 
 To run the Lo-fi Admin Dashboard locally, follow these steps:

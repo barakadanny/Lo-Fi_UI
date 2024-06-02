@@ -40,7 +40,7 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
         ctx.textBaseline = "middle";
 
         const textX = Math.round(
-          (width - ctx.measureText(centerText).width) / 2.9
+          (width - ctx.measureText(centerText).width) / 3.3
         );
         const textY = height / 2;
 
@@ -93,7 +93,7 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
     };
   }, [data, centerText]);
 
-  return <canvas ref={chartRef} />;
+  return <canvas ref={chartRef} style={{ marginRight: "90px" }} />;
 };
 
 export default ChartComponent;

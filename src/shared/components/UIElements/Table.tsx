@@ -50,6 +50,30 @@ const Table: React.FC<TableProps> = ({ headers, data }) => (
                     {row["Name"]}
                   </span>
                 </div>
+              ) : header === "Status" ? (
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <span
+                    style={{
+                      width: "10px",
+                      height: "10px",
+                      borderRadius: "50%",
+                      marginRight: "8px",
+                      backgroundColor:
+                        row[header] === "Completed"
+                          ? "green"
+                          : row[header] === "In Progress"
+                          ? "blue"
+                          : row[header] === "Not Started"
+                          ? "red"
+                          : row[header] === "Low"
+                          ? "orange"
+                          : row[header] === "None"
+                          ? "red"
+                          : "gray",
+                    }}
+                  ></span>
+                  {row[header]}
+                </div>
               ) : (
                 row[header]
               )}

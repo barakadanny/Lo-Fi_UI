@@ -5,7 +5,7 @@ import CardContainer from "../../shared/components/UIElements/CardContainer";
 
 export default function RentalTools() {
   return (
-    <CardContainer className="col-span-3">
+    <CardContainer className="col-span-1 lg:col-span-3">
       <CardTable
         headers={{
           name: "Rental Tools",

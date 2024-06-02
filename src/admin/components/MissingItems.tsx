@@ -4,7 +4,7 @@ import CardContainer from "../../shared/components/UIElements/CardContainer";
 
 export default function MissingItems() {
   return (
-    <CardContainer className="col-span-2">
+    <CardContainer className="col-span-1 lg:col-span-2">
       <CardTable
         headers={{
           name: "Missing Items",

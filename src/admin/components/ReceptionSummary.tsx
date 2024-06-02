@@ -5,7 +5,7 @@ import { getReception } from "../../api/receptionSummary";
 
 const ReceptionSummary: React.FC = () => {
   return (
-    <CardContainer className="col-span-2 border-white">
+    <CardContainer className="col-span-1 lg:col-span-2 border-white">
       <CardInformation
         headers={{
           name: "Reception Summary",

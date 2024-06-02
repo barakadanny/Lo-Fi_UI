@@ -10,7 +10,7 @@ import ReceptionSummary from "../components/ReceptionSummary";
 export default function Home() {
   return (
     <Container>
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         <RentalTools />
         <WorkOrderStatus />
         <MissingItems />

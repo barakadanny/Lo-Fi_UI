@@ -5,7 +5,7 @@ import { getToolEquipmentAvailability } from "../../api/toolsAndEquipmentsAvaila
 
 const ToolsAndEquipmentsAvailability: React.FC = () => {
   return (
-    <CardContainer className="col-span-3">
+    <CardContainer className="col-span-1 lg:col-span-3">
       <CardInformation
         headers={{
           name: "Tools and Equipments Availability",

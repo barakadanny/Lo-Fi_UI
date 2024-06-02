@@ -5,7 +5,7 @@ import CardContainer from "../../shared/components/UIElements/CardContainer";
 
 const WorkOrderStatus: React.FC = () => {
   return (
-    <CardContainer className="col-span-2">
+    <CardContainer className="col-span-1 lg:col-span-2">
       <IndicatorWidget
         headers={{
           name: "Work Order Status",

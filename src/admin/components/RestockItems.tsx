@@ -4,7 +4,7 @@ import CardContainer from "../../shared/components/UIElements/CardContainer";
 
 export default function RestockItems() {
   return (
-    <CardContainer className="col-span-3">
+    <CardContainer className="col-span-1 lg:col-span-3">
       <CardTable
         headers={{
           name: "Restock Items",

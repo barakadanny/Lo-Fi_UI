@@ -56,7 +56,7 @@ export const missingItemsHeaders: string[] = ["Tool", "Name", "Action"];
 export const rentalToolsHeaders: string[] = [
   "Work Order",
   "Tool",
-  "Name",
+  "Team Member",
   "Status",
   "Duration",
   "Action",

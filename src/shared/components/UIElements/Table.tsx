@@ -41,6 +41,7 @@ const Table: React.FC<TableProps> = ({ headers, data }) => (
                       imageUrl={row["ProfileImage"]}
                       alt="Profile"
                       size="30px"
+                      className="hidden md:block"
                     />
                   )}
                   <span

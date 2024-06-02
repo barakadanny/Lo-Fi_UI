@@ -57,7 +57,7 @@ export interface TableProps {
 
 export const receptionSummaryHeaders: string[] = ["Icon", "Name", "Count"];
 
-export const missingItemsHeaders: string[] = ["Tool", "Team Member", "Action"];
+export const missingItemsHeaders: string[] = ["Tool", "Team Member", ""];
 
 export const rentalToolsHeaders: string[] = [
   "Work Order",
@@ -65,12 +65,12 @@ export const rentalToolsHeaders: string[] = [
   "Team Member",
   "Status",
   "Duration",
-  "Action",
+  "",
 ];
 
 export const restockItemsHeaders: string[] = [
   "Tool",
   "Equipment",
   "Status",
-  "Action",
+  "",
 ];

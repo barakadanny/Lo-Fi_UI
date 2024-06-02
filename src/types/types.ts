@@ -41,6 +41,14 @@ export interface MissingItemsData {
   ProfileImage: string;
 }
 
+export interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+  onClick?: () => void;
+  disabled?: boolean;
+  type?: "button" | "submit" | "reset";
+}
+
 export const receptionSummaryHeaders: string[] = ["Icon", "Name", "Count"];
 
 export const missingItemsHeaders: string[] = ["Tool", "Name", "Action"];

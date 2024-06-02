@@ -16,7 +16,7 @@ export const CommonTable: React.FC<RentalToolsProps> = ({ headers, data }) => {
       data={data.map((item, index) => ({
         "Work Order": formatIndexWithZero(index),
         ...item,
-        Action: (
+        "": (
           <Button
             onClick={() => console.log(`Button clicked for ${item.Name}`)}
           >

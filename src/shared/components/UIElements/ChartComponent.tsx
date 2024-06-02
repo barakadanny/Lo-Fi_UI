@@ -7,7 +7,7 @@ interface ChartComponentProps {
     datasets: {
       label: string;
       data: number[];
-      backgroundColor: any;
+      backgroundColor?: string[];
       borderColor: string[];
       borderWidth: number;
     }[];
@@ -69,6 +69,8 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
                     const value = dataset.data[index];
                     return {
                       text: `${label}: ${value}`,
+                      // @ts-ignore
+                      // Note that this is not a typo. This is how the chart.js types are defined
                       fillStyle: dataset.backgroundColor[index],
                       hidden: !chart.getDataVisibility(index),
                       index,

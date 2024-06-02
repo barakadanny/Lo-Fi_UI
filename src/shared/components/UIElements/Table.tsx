@@ -28,13 +28,13 @@ const Table: React.FC<TableProps> = ({ headers, data }) => (
     </thead>
     <tbody>
       {data.map((row: RentalToolData, rowIndex: number) => (
-        <tr className="border-b" key={rowIndex}>
+        <tr className="[&:not(:last-child)]:border-b" key={rowIndex}>
           {headers.map((header: string, index: number) => (
             <td
               className="px-1 py-2 font-medium text-gray-500 whitespace-nowrap"
               key={index}
             >
-              {header === "Name" ? (
+              {header === "Team Member" ? (
                 <div style={{ display: "flex", alignItems: "center" }}>
                   {row["ProfileImage"] && (
                     <Profile

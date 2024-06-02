@@ -4,6 +4,7 @@ export interface RentalToolData {
   Status: string;
   Duration: string;
   ProfileImage: string;
+  [key: string]: any;
 }
 
 export interface NameType {
@@ -47,6 +48,11 @@ export interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
+}
+
+export interface TableProps {
+  headers: string[];
+  data: RentalToolData[];
 }
 
 export const receptionSummaryHeaders: string[] = ["Icon", "Name", "Count"];

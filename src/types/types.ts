@@ -51,7 +51,7 @@ export interface ButtonProps {
 
 export const receptionSummaryHeaders: string[] = ["Icon", "Name", "Count"];
 
-export const missingItemsHeaders: string[] = ["Tool", "Name", "Action"];
+export const missingItemsHeaders: string[] = ["Tool", "Team Member", "Action"];
 
 export const rentalToolsHeaders: string[] = [
   "Work Order",

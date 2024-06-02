@@ -6,14 +6,14 @@ const dummy_data: RentalToolData[] = [
   {
     Tool: 6465,
     Name: "Tool One",
-    Status: "Componented",
+    Status: "Completed",
     Duration: "15:00",
     ProfileImage: profile1,
   },
   {
     Tool: 6466,
     Name: "Tool Two",
-    Status: "in Progress",
+    Status: "In Progress",
     Duration: "05:00",
     ProfileImage: profile2,
   },

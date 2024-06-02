@@ -9,12 +9,12 @@ const dummy_data: RestockItemsData[] = [
   {
     Tool: 6466,
     Equipment: "Tool Two",
-    Status: "Medium",
+    Status: "None",
   },
   {
     Tool: 6467,
     Equipment: "Tool Three",
-    Status: "none",
+    Status: "None",
   },
 ];
 

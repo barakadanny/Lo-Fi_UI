@@ -35,12 +35,12 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
       beforeDraw(chart: any) {
         const { width, height, ctx } = chart;
         ctx.restore();
-        const fontSize = (height / 400).toFixed(2);
+        const fontSize = (height / 250).toFixed(2);
         ctx.font = `${fontSize}em sans-serif`;
         ctx.textBaseline = "middle";
 
         const textX = Math.round(
-          (width - ctx.measureText(centerText).width) / 2
+          (width - ctx.measureText(centerText).width) / 2.9
         );
         const textY = height / 2;
 

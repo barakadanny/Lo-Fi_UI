@@ -8,7 +8,12 @@ const Table: React.FC<TableProps> = ({ headers, data }) => (
     <thead className="text-base text-gray-700 border-b">
       <tr>
         {headers.map((header) => (
-          <th className="px-1 py-3 text-gray-500 font-normal" key={header}>
+          <th
+            className={`px-1 py-3 text-gray-500 font-normal ${
+              header === "Work Order" ? "hidden md:table-cell" : ""
+            }`}
+            key={header}
+          >
             {header}
           </th>
         ))}
@@ -19,7 +24,9 @@ const Table: React.FC<TableProps> = ({ headers, data }) => (
         <tr className="[&:not(:last-child)]:border-b" key={rowIndex}>
           {headers.map((header: string, index: number) => (
             <td
-              className="px-1 py-2 font-medium text-gray-500 whitespace-nowrap"
+              className={`px-1 py-2 font-medium text-gray-500 whitespace-nowrap ${
+                header === "Work Order" ? "hidden md:table-cell" : ""
+              }`}
               key={index}
             >
               {header === "Team Member" ? (
